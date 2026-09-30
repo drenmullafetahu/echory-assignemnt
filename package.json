@@ -1,0 +1,19 @@
+{
+  "name": "echory-sentiment-engine",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Track A — Echory Sentiment Intelligence Engine",
+  "workspaces": [
+    "reference-backend",
+    "frontend"
+  ],
+  "scripts": {
+    "start": "npm start --workspace=reference-backend",
+    "dev:frontend": "npm run dev --workspace=frontend",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "test": "npm test --workspaces --if-present"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
